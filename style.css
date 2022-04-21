@@ -186,7 +186,7 @@ input[type=search] {
 }
 
 .hero-image{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("hero_image.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./Images/hero_image.jpg");
 	height: 450px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -244,7 +244,7 @@ left: 0%;
  }
  
  .accessories-banner{
-   background-image: url("accessories_banner.jpg");
+   background-image: url("./Images/accessories_banner.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -279,7 +279,7 @@ left: 0%;
  }
  
  .dress-banner{
-   background-image: url("dresses_banner.jpg");
+   background-image: url("./Images/dresses_banner.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -576,6 +576,7 @@ margin-top: 10px;
     display: block;
     max-width: 100%;
     overflow: hidden;
+    flex-wrap: nowrap;
     } 
   
     #logo{
@@ -730,6 +731,10 @@ margin-top: 10px;
 @media only screen and (min-device-width:760px) and (max-device-width: 1024px)
 
 {
+  .header-container{
+    flex-wrap: nowrap;
+  }
+  
   .search {
     margin-left: 100px;
   }
